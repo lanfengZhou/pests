@@ -1,0 +1,47 @@
+<script type="text/javascript" src="/js/<%=jsname%>.js"></script>
+<div class="<%=jsname%>List">
+  <table id="<%=jsname%>List"></table>
+  <div id="pager"></div>
+</div>
+<div class="container" id="formDiv">
+  <div class="row">
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 col-lg-offset-4 ">
+      <form class="form-horizontal" id="<%=jsname%>Form">
+       <input type="text" name="id" class="seria" id="editNumbers" style="display: none" />
+        <div class="form-group">
+          <div class="col-lg-7 col-sm-8 col-xs-7">
+            <h3 class="form-signin-heading"><%=head%></h3>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="name" class="control-label col-lg-3 col-xs-4 col-sm-4 col-lg-4" ><%=name%></label>
+          <div class="col-lg-7 col-sm-8 col-xs-7">
+            <input id="name" value="" class="form-control" name="name"/>
+          </div>
+          <div class='col-lg-7 col-sm-8 col-xs-7 col-sm-offset-3 col-xs-offset-4' style='color:#f00;display: none'>*<%=jsname%>已经存在</div>
+        </div>
+        <% if(jsname=='pests'){%>
+          <div class="form-group">
+            <label for="crops_id" class="control-label col-lg-3 col-xs-4 col-sm-4">所属农作物</label>
+            <div class="col-lg-7 col-sm-8 col-xs-7">
+              <select  id="crops_id" name="crops_id" class="form-control"> >
+              </select>
+            </div>
+          </div>
+        <%}%>
+
+        <div class="form-group">
+          <label for="description" class="control-label col-lg-3 col-xs-4 col-sm-4"><%=description%></label>
+          <div class="col-lg-7 col-sm-8 col-xs-7">
+            <input type="text" name="description" class="form-control"/>
+          </div>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-primary col-sm-4 col-xs-4 col-sm-offset-1" id="edit">确认修改</button>
+            <button type="button" class="btn btn-primary col-sm-4 col-xs-4 col-sm-offset-1 col-xs-offset-1" id="add">确认添加</button>
+            <button type="button" class="btn btn-primary col-sm-4 col-xs-4 col-sm-offset-2 col-xs-offset-1" id="cancle">取消</button>
+        </div>
+      </form><!--电子标签管理表单结束-->
+    </div>
+</div>
+</div>

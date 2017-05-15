@@ -1,0 +1,29 @@
+.cropsList,.pestsList{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  }
+  #formDiv{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: none;
+    /*background-color: #f00;*/
+    z-index: 100;
+  }
+  #cropsForm,#pestsForm{
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    height: 100%;
+    /*background-color: #0f0;*/
+  }
+  .delete,.edit,.bind,.unbind{
+    background-color: #fff;
+    border-radius: 7px;
+    margin-left: 10px;
+  }
+  #edit,#obj{
+    display: none;
+  }

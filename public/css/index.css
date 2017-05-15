@@ -1,0 +1,79 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.center{
+	width: 100%;
+	height: 100%;
+	margin-top:50px;
+	margin-bottom: 50px;
+}
+.left{
+	width: 200px;
+	height: 100%;
+	min-width: 200px;
+	font-size: 18px;
+	float: left;
+}
+.right{
+	height: 100%;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #e8e8e8;
+	overflow: hidden;
+}
+.left .navtop{
+	width: 100%;
+	border-radius: 0;
+	font-weight: bold;
+}
+.left >ul{
+	margin-top: 20px;
+}
+.left .navlist ul li{
+	padding-left: 30px;
+	margin: 20px 0;
+	/*background-color: #e8e8e8;*/
+	/*list-style-image:url("/images/off.png");*/
+}
+.left .navlist a{
+	text-decoration: none;
+	color: #000;
+}
+.left .navlist a:hover{
+	color: #8e8e8e;
+}
+.left .navlist>a:before{
+	content: '';
+	display: inline-block;
+	background: url(/images/off.png);
+	width: 8px;
+	height: 8px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.left .navlist.selected>a:before{
+	content: '';
+	display: inline-block;
+	background: url(/images/on.png);
+	width: 8px;
+	height: 8px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	opacity: .3;  
+	top: 0;  
+	left: 0; 
+	background-color: black;  
+	z-index: 10;  
+}

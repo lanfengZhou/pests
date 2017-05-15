@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	   <!-- Bootstrap -->
+    <link href="/js/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet" type="text/css" >
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <!-- jqGrid组件基础样式包-必要 -->
+  <link rel="stylesheet" href="/js/jqgrid/css/ui.jqgrid.css" />
+    <!-- jqGrid主题包-非必要 --> 
+  <!-- 在jqgrid/css/css这个目录下还有其他的主题包，可以尝试更换看效果 -->
+  <link rel="stylesheet" href="/js/jqgrid/css/css/redmond/jquery-ui-1.8.16.custom.css" />
+  <link rel="stylesheet" type="text/css" href="/css/crops.css">
+
+</head>
+<body>
+<div class="overlay" id="overlay"></div>
+<!-- Static navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">病虫害识别系统</a>
+      </div>
+   <!--    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="javascript:;">当前用户：<span id="user">。。。</span></a></li>
+          <li><a href="javascript:;" id="logout">注销</a></li>
+        </ul>
+      </div> --><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+  <div class="center">
+  	<div class="left">
+  		<div  class="navtop btn btn-primary">导航栏</div>
+  		<ul>
+  			<li class="navlist"><a href="javascript:;" class="list" >类型管理</a>
+  				<ul>
+  					<li><a href="javascript:;" id="crops" name="crops">农作物类型管理</a></li>
+  					<li><a href="javascript:;" id="pests" name="pests">病虫害类型管理</a></li>
+  				</ul></li>
+  			<li class="navlist"><a href="javascript:;" class="list" >信息管理</a>
+  				<ul>
+  					<li><a href="javascript:;" name="ordinaryUsers.html">信息录入</a></li>
+            <li><a href="javascript:;" name="ordinaryUsers.html">病虫害识别</a></li>
+  				</ul></li>
+  		</ul><!--导航栏结束!-->
+  	</div><!--left结束!-->
+    <div class="right">
+      <div " id="changeHtml" style="width: 100%;height: 100%"></div>
+    </div>
+  </div>
+   <!-- 底部导航 -->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid ">
+        <p class="lead navbar-right company"><em>北京奥尔斯教育科技有限公司</em></p>
+      </div>
+    </nav>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+          <!-- jqGrid插件包-必要 -->
+    <script type="text/javascript" src="/js/jqgrid/js/jquery.jqGrid.src.js"></script>
+     <!-- jqGrid插件的多语言包-非必要 -->
+    <!-- 在jqgrid/js/i18n下还有其他的多语言包，可以尝试更换看效果 -->
+    <script type="text/javascript" src="/js/jqgrid/js/i18n/grid.locale-cn.js"></script>
+</body>
+</html>
